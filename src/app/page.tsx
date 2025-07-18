@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MobileNav from "@/components/MobileNav";
 import TypewriterText from "@/components/TypewriterText";
 import { getPortfolioData, getColorClasses } from "@/utils/portfolio";
@@ -39,7 +38,7 @@ export default function Home() {
               </div>
             </div>
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">{data.personal.name}</span>
+              Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">{data.personal.name}</span>
             </h1>
             <div className="mb-8">
               <TypewriterText texts={data.personal.typewriterTexts} />
