@@ -1,6 +1,8 @@
 import MobileNav from "@/components/MobileNav";
 import TypewriterText from "@/components/TypewriterText";
+import SocialIcon from "@/components/SocialIcon";
 import { getPortfolioData, getColorClasses } from "@/utils/portfolio";
+import Image from "next/image";
 
 export default function Home() {
   const data = getPortfolioData();
@@ -33,8 +35,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <div className="mb-8">
-              <div className="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold">
-                {data.personal.initials}
+              <div className="w-32 h-32 mx-auto relative">
+                <Image
+                  src={data.personal.avatar}
+                  alt={data.personal.name}
+                  fill
+                  className="rounded-full object-cover border-4 border-white shadow-lg"
+                  sizes="128px"
+                  priority
+                />
               </div>
             </div>
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
@@ -94,12 +103,34 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.projects.items.map((project) => (
               <div key={project.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className={`h-48 bg-gradient-to-r ${project.gradient}`}></div>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-b ${project.gradient} opacity-10`}></div>
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
                     {project.description}
                   </p>
+                  {project.highlights && (
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Key Features:</h4>
+                      <ul className="space-y-1">
+                        {project.highlights.map((highlight, index) => (
+                          <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-start">
+                            <span className="text-purple-600 mr-2">•</span>
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => {
                       const colors = getColorClasses(tech.color);
@@ -125,26 +156,81 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 bg-white dark:bg-gray-800 px-4 sm:px-6 lg:px-8">
+      <section id="experience" className="py-12 bg-white dark:bg-gray-800 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
             {data.experience.title}
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-4">
             {data.experience.items.map((item) => {
               const colors = getColorClasses(item.color);
               return (
-                <div key={item.id} className={`border-l-4 ${colors.border} pl-8`}>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{item.position}</h3>
-                    <span className="text-gray-600 dark:text-gray-400">{item.period}</span>
+                <div key={item.id} className={`border-l-4 ${colors.border} pl-6 py-4`}>
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-1">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{item.position}</h3>
+                    <span className="text-sm text-gray-500 dark:text-gray-500 sm:ml-4 flex-shrink-0">{item.period}</span>
                   </div>
-                  <p className={`${colors.text.replace('800', '600')} ${colors.darkText.replace('200', '400')} font-medium mb-2`}>
+                  <p className={`${colors.text.replace('800', '600')} ${colors.darkText.replace('200', '400')} font-medium text-sm mb-2`}>
                     {item.company}
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                     {item.description}
                   </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-16 bg-gray-50 dark:bg-gray-900 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+            {data.certifications.title}
+          </h2>
+          <div className="space-y-6">
+            {data.certifications.items.map((cert) => {
+              const colors = getColorClasses(cert.color);
+              return (
+                <div
+                  key={cert.id}
+                  className={`flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow border-l-4 ${colors.border}`}
+                >
+                  <div className={`p-3 ${colors.bg} ${colors.darkBg} rounded-lg flex-shrink-0`}>
+                    <span className="text-2xl">{cert.icon}</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+                      <div>
+                        <h3 className={`${colors.text} ${colors.darkText} font-bold text-lg mb-1`}>
+                          {cert.title}
+                        </h3>
+                        <p className="text-gray-600 dark:text-gray-400 font-medium">
+                          {cert.issuer}
+                        </p>
+                      </div>
+                      <div className="mt-2 sm:mt-0 sm:text-right">
+                        <div className="text-sm text-gray-500 dark:text-gray-500">
+                          <div>Issued: <span className={`${colors.text} ${colors.darkText} font-medium`}>{cert.issued}</span></div>
+                          <div>Expires: <span className={`${colors.text} ${colors.darkText} font-medium`}>{cert.expires}</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    {cert.url && (
+                      <div>
+                        <a
+                          href={cert.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-2 ${colors.text} ${colors.darkText} hover:underline font-medium`}
+                        >
+                          <span>🔗</span>
+                          View Credential
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               );
             })}
@@ -179,7 +265,7 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-2xl">{social.icon}</span>
+                  <SocialIcon name={social.name} />
                 </a>
               ))}
             </div>

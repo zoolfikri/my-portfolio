@@ -5,7 +5,7 @@
     "title": "Frontend Developer",
     "subtitle": "UI/UX Enthusiast",
     "bio": "With over 7 years in the tech industry, I've evolved from a fullstack developer into a frontend specialist who truly loves crafting user interfaces that just feel right. My journey has taken me through diverse projects at companies like Nawatech, Jejakin, and PT Solman Manunggal Informatika, where I've learned that great frontend development isn't just about making things look good—it's about creating experiences that users actually enjoy using.",
-    "email": "your.email@example.com",
+    "email": "zulfikrimuhammad4@gmail.com",
     "avatar": "/avatar.jpg",
     "typewriterTexts": [
       "Frontend Developer",
@@ -32,6 +32,10 @@
       {
         "href": "#experience",
         "label": "Experience"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
       },
       {
         "href": "#contact",
@@ -79,77 +83,84 @@
     "items": [
       {
         "id": 1,
-        "title": "Project One",
-        "description": "A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and responsive design.",
-        "image": "/projects/project1.jpg",
-        "gradient": "from-blue-400 to-purple-500",
+        "title": "Maindealers",
+        "description": "An enterprise-grade motorcycle sales ecosystem with multi-channel chatbot integration (WhatsApp + embeddable web widgets). Features white-label solutions for dealer partners, campaign-driven QR code generation, and seamless data injection capabilities across three interconnected applications designed to scale customer acquisition.",
+        "image": "/projects/maindealers.png",
+        "gradient": "from-blue-500 to-purple-600",
         "technologies": [
           {
             "name": "React",
             "color": "blue"
           },
           {
-            "name": "Node.js",
+            "name": "Next.js",
+            "color": "blue"
+          },
+          {
+            "name": "TypeScript",
+            "color": "blue"
+          },
+          {
+            "name": "REST APIs",
             "color": "green"
           },
           {
-            "name": "MongoDB",
-            "color": "purple"
+            "name": "Qiscus",
+            "color": "green"
           }
         ],
+        "highlights": [
+          "Web Console (React) - Campaign management with QR code generation for customer acquisition",
+          "Multi-channel Chatbot - Qiscus integration for WhatsApp + embeddable web widget for dealer websites",
+          "Product Catalog (Next.js) - Interactive motorcycle showcase with installment simulation",
+          "White-label solution: Embeddable chatbot with custom data injection for dealer partners",
+          "Integrated customer journey: QR scan → Chatbot → Catalog → Lead capture",
+          "Cross-application data flow for seamless user experience and prospect tracking"
+        ],
         "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/username/project1"
+          "demo": "https://maindealers.example.com",
+          "github": "https://github.com/zoolfikri/maindealers"
         }
       },
       {
         "id": 2,
-        "title": "Project Two",
-        "description": "A mobile-first e-commerce platform with advanced search functionality, payment integration, and admin dashboard.",
-        "image": "/projects/project2.jpg",
-        "gradient": "from-green-400 to-blue-500",
+        "title": "Nawatech Internal Management System",
+        "description": "A comprehensive enterprise-grade internal management platform built for Nawatech to centralize all company operations. Features Azure AD SSO integration for seamless employee authentication and supports advanced project management with MPP file uploads for Microsoft Project integration.",
+        "image": "/projects/nawatech-internal.jpg",
+        "gradient": "from-green-500 to-blue-600",
         "technologies": [
+          {
+            "name": "React",
+            "color": "blue"
+          },
           {
             "name": "Next.js",
             "color": "blue"
           },
           {
             "name": "TypeScript",
-            "color": "yellow"
-          },
-          {
-            "name": "Stripe",
-            "color": "red"
-          }
-        ],
-        "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/username/project2"
-        }
-      },
-      {
-        "id": 3,
-        "title": "Project Three",
-        "description": "A data visualization dashboard that helps users analyze complex datasets through interactive charts and real-time analytics.",
-        "image": "/projects/project3.jpg",
-        "gradient": "from-purple-400 to-pink-500",
-        "technologies": [
-          {
-            "name": "Python",
-            "color": "orange"
-          },
-          {
-            "name": "Django",
             "color": "blue"
           },
           {
-            "name": "D3.js",
+            "name": "Azure AD",
+            "color": "blue"
+          },
+          {
+            "name": "REST APIs",
             "color": "green"
           }
         ],
+        "highlights": [
+          "Azure AD SSO integration for seamless company-wide authentication",
+          "Project Management with MPP file upload support for Microsoft Project",
+          "Task Management system with assignment and tracking capabilities",
+          "Leave Management with approval workflows and calendar integration",
+          "Employee Management with role-based access control",
+          "Timesheet tracking with project allocation and reporting"
+        ],
         "links": {
-          "demo": "https://example.com",
-          "github": "https://github.com/username/project3"
+          "demo": "https://internal.nawatech.com",
+          "github": "https://github.com/nawatech/internal-system"
         }
       }
     ]
@@ -191,28 +202,81 @@
       }
     ]
   },
+  "certifications": {
+    "title": "Licenses & Certifications",
+    "items": [
+      {
+        "id": 1,
+        "title": "Microsoft Certified: Azure Developer Associate",
+        "issuer": "Microsoft",
+        "issued": "Jan 2023",
+        "expires": "Jan 2025",
+        "credentialId": "915199A902E45314",
+        "url": "https://learn.microsoft.com/api/credentials/share/en-us/MuhammadZulfikri-1395/915199A902E45314?sharingId=F8A46271361A7EC0",
+        "color": "blue",
+        "icon": "☁️"
+      },
+      {
+        "id": 2,
+        "title": "Webflow Certification exam, Webflow 101",
+        "issuer": "Webflow",
+        "issued": "Feb 2024",
+        "expires": "Feb 2025",
+        "credentialId": "565010",
+        "url": "/certificates/webflow-101-certificate.pdf",
+        "color": "purple",
+        "icon": "🎨"
+      },
+      {
+        "id": 3,
+        "title": "Webflow Certification exam, Layout Level 1",
+        "issuer": "Webflow",
+        "issued": "Feb 2024",
+        "expires": "Mar 2025",
+        "credentialId": "392817",
+        "url": "/certificates/webflow-layout-level-1-certificate.pdf",
+        "color": "purple",
+        "icon": "📐"
+      },
+      {
+        "id": 4,
+        "title": "Webflow Certification exam, Layout Level 2",
+        "issuer": "Webflow",
+        "issued": "Feb 2024",
+        "expires": "Mar 2025",
+        "credentialId": "415849",
+        "url": "/certificates/webflow-layout-level-2-certificate.pdf",
+        "color": "purple",
+        "icon": "🏗️"
+      },
+      {
+        "id": 5,
+        "title": "Webflow Certification exam, CMS Level 1",
+        "issuer": "Webflow",
+        "issued": "Feb 2024",
+        "expires": "Mar 2025",
+        "credentialId": "414918",
+        "url": "/certificates/webflow-cms-level-1-certificate.pdf",
+        "color": "purple",
+        "icon": "📊"
+      }
+    ]
+  },
   "contact": {
     "title": "Let's Work Together",
     "description": "I'm always interested in new opportunities and interesting projects.",
     "email": {
-      "address": "your.email@example.com",
+      "address": "zulfikrimuhammad4@gmail.com",
       "subject": "Let's work together!"
     },
     "social": [
       {
         "name": "LinkedIn",
-        "url": "https://linkedin.com/in/yourprofile",
-        "icon": "💼"
+        "url": "https://www.linkedin.com/in/muhammad-z-06182812b/"
       },
       {
         "name": "GitHub",
-        "url": "https://github.com/yourusername",
-        "icon": "🐙"
-      },
-      {
-        "name": "Portfolio",
-        "url": "https://yourportfolio.com",
-        "icon": "🔗"
+        "url": "https://github.com/zoolfikri"
       }
     ]
   },

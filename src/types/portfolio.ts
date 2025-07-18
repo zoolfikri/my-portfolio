@@ -48,6 +48,7 @@ export interface Project {
   image: string;
   gradient: string;
   technologies: Technology[];
+  highlights?: string[];
   links: ProjectLinks;
 }
 
@@ -68,6 +69,23 @@ export interface ExperienceItem {
 export interface Experience {
   title: string;
   items: ExperienceItem[];
+}
+
+export interface CertificationItem {
+  id: number;
+  title: string;
+  issuer: string;
+  issued: string;
+  expires: string;
+  credentialId: string;
+  url?: string;
+  color: string;
+  icon: string;
+}
+
+export interface Certifications {
+  title: string;
+  items: CertificationItem[];
 }
 
 export interface SocialLink {
@@ -98,6 +116,7 @@ export interface PortfolioData {
   skills: Skills;
   projects: Projects;
   experience: Experience;
+  certifications: Certifications;
   contact: Contact;
   footer: Footer;
 }
