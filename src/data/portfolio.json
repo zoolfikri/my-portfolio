@@ -1,0 +1,222 @@
+{
+  "personal": {
+    "name": "Muhammad Zulfikri",
+    "initials": "MZ",
+    "title": "Frontend Developer",
+    "subtitle": "UI/UX Enthusiast",
+    "bio": "With over 7 years in the tech industry, I've evolved from a fullstack developer into a frontend specialist who truly loves crafting user interfaces that just feel right. My journey has taken me through diverse projects at companies like Nawatech, Jejakin, and PT Solman Manunggal Informatika, where I've learned that great frontend development isn't just about making things look good—it's about creating experiences that users actually enjoy using.",
+    "email": "your.email@example.com",
+    "avatar": "/avatar.jpg",
+    "typewriterTexts": [
+      "Frontend Developer",
+      "UI/UX Enthusiast",
+      "React Specialist",
+      "User Experience Advocate"
+    ]
+  },
+  "navigation": {
+    "brand": "Portfolio",
+    "links": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#skills",
+        "label": "Skills"
+      },
+      {
+        "href": "#projects",
+        "label": "Projects"
+      },
+      {
+        "href": "#experience",
+        "label": "Experience"
+      },
+      {
+        "href": "#contact",
+        "label": "Contact"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "🎨",
+        "color": "blue",
+        "skills": [
+          "React / Next.js",
+          "TypeScript / JavaScript",
+          "Tailwind CSS / Bootstrap",
+          "HTML5 / CSS3"
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "⚙️",
+        "color": "green",
+        "skills": [
+          "Node.js / Express",
+          "MySQL",
+          "REST APIs"
+        ]
+      },
+      {
+        "name": "Tools",
+        "icon": "🚀",
+        "color": "purple",
+        "skills": [
+          "Git / GitHub",
+          "Docker"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "items": [
+      {
+        "id": 1,
+        "title": "Project One",
+        "description": "A full-stack web application built with React and Node.js. Features include user authentication, real-time updates, and responsive design.",
+        "image": "/projects/project1.jpg",
+        "gradient": "from-blue-400 to-purple-500",
+        "technologies": [
+          {
+            "name": "React",
+            "color": "blue"
+          },
+          {
+            "name": "Node.js",
+            "color": "green"
+          },
+          {
+            "name": "MongoDB",
+            "color": "purple"
+          }
+        ],
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/username/project1"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Project Two",
+        "description": "A mobile-first e-commerce platform with advanced search functionality, payment integration, and admin dashboard.",
+        "image": "/projects/project2.jpg",
+        "gradient": "from-green-400 to-blue-500",
+        "technologies": [
+          {
+            "name": "Next.js",
+            "color": "blue"
+          },
+          {
+            "name": "TypeScript",
+            "color": "yellow"
+          },
+          {
+            "name": "Stripe",
+            "color": "red"
+          }
+        ],
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/username/project2"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Project Three",
+        "description": "A data visualization dashboard that helps users analyze complex datasets through interactive charts and real-time analytics.",
+        "image": "/projects/project3.jpg",
+        "gradient": "from-purple-400 to-pink-500",
+        "technologies": [
+          {
+            "name": "Python",
+            "color": "orange"
+          },
+          {
+            "name": "Django",
+            "color": "blue"
+          },
+          {
+            "name": "D3.js",
+            "color": "green"
+          }
+        ],
+        "links": {
+          "demo": "https://example.com",
+          "github": "https://github.com/username/project3"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "id": 1,
+        "position": "Frontend Developer",
+        "company": "Nawatech",
+        "period": "Oct 2018 - Present",
+        "description": "Leading frontend development initiatives with a focus on modern React applications and user experience optimization. Collaborating with cross-functional teams to deliver scalable web solutions that serve thousands of users daily.",
+        "color": "orange"
+      },
+      {
+        "id": 2,
+        "position": "Frontend Developer",
+        "company": "Jejakin",
+        "period": "Aug 2021 - Mar 2023",
+        "description": "Developed responsive web applications using React and modern frontend technologies. Worked closely with designers to implement pixel-perfect interfaces while maintaining excellent performance and accessibility standards.",
+        "color": "green"
+      },
+      {
+        "id": 3,
+        "position": "Senior Programmer",
+        "company": "PT Solman Manunggal Informatika",
+        "period": "Oct 2018 - Jul 2021",
+        "description": "Enhanced existing applications and built new features using various programming languages and frameworks. Mentored junior developers and contributed to technical decision-making processes.",
+        "color": "purple"
+      },
+      {
+        "id": 4,
+        "position": "Fullstack Developer",
+        "company": "PT Echoscript Indonesia",
+        "period": "Apr 2017 - Oct 2018",
+        "description": "Started my professional journey developing both frontend and backend solutions. Built web applications from concept to deployment, gaining valuable experience in the complete software development lifecycle.",
+        "color": "blue"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "I'm always interested in new opportunities and interesting projects.",
+    "email": {
+      "address": "your.email@example.com",
+      "subject": "Let's work together!"
+    },
+    "social": [
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/yourprofile",
+        "icon": "💼"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/yourusername",
+        "icon": "🐙"
+      },
+      {
+        "name": "Portfolio",
+        "url": "https://yourportfolio.com",
+        "icon": "🔗"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Muhammad Zulfikri. Built with Next.js and Tailwind CSS."
+  }
+}
