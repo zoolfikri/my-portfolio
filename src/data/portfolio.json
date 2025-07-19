@@ -34,6 +34,10 @@
         "label": "Experience"
       },
       {
+        "href": "#speaking",
+        "label": "Speaking"
+      },
+      {
         "href": "#certifications",
         "label": "Certifications"
       },
@@ -48,7 +52,7 @@
     "categories": [
       {
         "name": "Frontend",
-        "icon": "🎨",
+        "icon": "palette",
         "color": "blue",
         "skills": [
           "React / Next.js",
@@ -59,7 +63,7 @@
       },
       {
         "name": "Backend",
-        "icon": "⚙️",
+        "icon": "cog",
         "color": "green",
         "skills": [
           "Node.js / Express",
@@ -69,7 +73,7 @@
       },
       {
         "name": "Tools",
-        "icon": "🚀",
+        "icon": "rocket",
         "color": "purple",
         "skills": [
           "Git / GitHub",
@@ -116,11 +120,7 @@
           "White-label solution: Embeddable chatbot with custom data injection for dealer partners",
           "Integrated customer journey: QR scan → Chatbot → Catalog → Lead capture",
           "Cross-application data flow for seamless user experience and prospect tracking"
-        ],
-        "links": {
-          "demo": "https://maindealers.example.com",
-          "github": "https://github.com/zoolfikri/maindealers"
-        }
+        ]
       },
       {
         "id": 2,
@@ -157,11 +157,7 @@
           "Leave Management with approval workflows and calendar integration",
           "Employee Management with role-based access control",
           "Timesheet tracking with project allocation and reporting"
-        ],
-        "links": {
-          "demo": "https://internal.nawatech.com",
-          "github": "https://github.com/nawatech/internal-system"
-        }
+        ]
       }
     ]
   },
@@ -202,6 +198,77 @@
       }
     ]
   },
+  "speaking": {
+    "title": "Speaking & Workshops",
+    "items": [
+      {
+        "id": 1,
+        "title": "Microsoft Build AI Day 2024",
+        "role": "GitHub Copilot Hackathon Lead",
+        "organization": "Nawatech, Microsoft & GitHub",
+        "date": "April 30, 2024",
+        "type": "Hackathon",
+        "description": "Led the first-ever offline GitHub Copilot Hackathon in Indonesia with 150+ participants as part of Microsoft Build: AI Day keynote by Satya Nadella at Jakarta Convention Center. Nawatech served as the trusted local partner, revolutionizing coding practices through AI-driven development and empowering participants with newfound confidence in AI-powered coding tools.",
+        "image": "/speaking/microsoft-build-ai-day-2024.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_github-copilot-hackathon-2024-activity-7191295416661860354-CM_1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      },
+      {
+        "id": 2,
+        "title": "Pertamina In-Person Workshop & Hackathon",
+        "role": "Workshop Leader & Organizer",
+        "organization": "Pertamina Hulu Rokan & Microsoft",
+        "date": "March 19, 2024",
+        "type": "Workshop",
+        "description": "Organized and led an in-person hackathon and workshop for Pertamina Hulu Rokan in collaboration with Microsoft, diving deep into GitHub Copilot and Microsoft Fabrics technologies. Successfully fostered innovation and explored cutting-edge technologies with Indonesia's leading energy company, pushing the boundaries of technology integration in the energy sector.",
+        "image": "/speaking/pertamina-github-copilot-workshop.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_in-person-workshop-and-hackathon-activity-7176868405600276480-qHlr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      },
+      {
+        "id": 3,
+        "title": "GitHub Copilot Hackathon with PT Kereta Api Indonesia",
+        "role": "Hackathon Host & Technical Mentor",
+        "organization": "PT Kereta Api Indonesia (Persero) & Nawatech",
+        "date": "Nov 6-7, 2024",
+        "type": "Hackathon",
+        "description": "Hosted and mentored GitHub Copilot Hackathon for PT Kereta Api Indonesia (Persero), empowering developers to explore AI-powered coding solutions and tackle real-world railway industry challenges. Successfully guided teams through optimizing workflows, driving automation, and showcasing the transformative potential of AI-driven development collaboration in Indonesia's national railway system.",
+        "image": "/speaking/kai-github-copilot-hackathon.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_github-copilot-hackathon-with-kai-activity-7260591899890049025-0bkc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      },
+      {
+        "id": 4,
+        "title": "GitHub Copilot Hands-on Workshop for PT. Pegadaian",
+        "role": "Workshop Leader & AI Productivity Coach",
+        "organization": "PT. Pegadaian & Nawatech",
+        "date": "Nov 25, 2024",
+        "type": "Training",
+        "description": "Led PT. Pegadaian's development team through an intensive hands-on GitHub Copilot workshop, empowering innovation with AI-powered coding assistance. Focused on boosting productivity, simplifying complex coding tasks, and sharing practical techniques to maximize AI potential in software development. Successfully helped Indonesia's largest pawn company embrace cutting-edge AI tools and elevate their development capabilities to the next level.",
+        "image": "/speaking/pegadaian-github-copilot-workshop.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_pegadaian-workshop-activity-7266752497862471680--y7g?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      },
+      {
+        "id": 5,
+        "title": "GitHub Copilot Hackathon at Microsoft Indonesia",
+        "role": "Technical Facilitator & GitHub Copilot Expert",
+        "organization": "PT Astra International Tbk & Microsoft",
+        "date": "Jun 27-28, 2024",
+        "type": "Hackathon",
+        "description": "Facilitated a successful GitHub Copilot Hackathon at the Microsoft Indonesia office, empowering Astra Group's developers to advance their coding skills and productivity. Collaborated with Microsoft to explain the immense benefits of GitHub Copilot, helping participants transform their coding practices through AI-powered development tools. Successfully supported one of Indonesia's largest conglomerates in their journey towards more advanced and efficient coding practices.",
+        "image": "/speaking/astra-github-copilot-hackathon.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_astra-github-hackathon-activity-7213766426912772096-WWJ_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      },
+      {
+        "id": 6,
+        "title": "Kemenkeu GovAI Hackathon",
+        "role": "Technical Coach & AI Innovation Facilitator",
+        "organization": "Kementerian Keuangan & Microsoft",
+        "date": "Nov 2024",
+        "type": "Hackathon",
+        "description": "Contributed to the groundbreaking GovAI Hackathon themed 'Catching the Dream' organized by Kementerian Keuangan Republik Indonesia with Microsoft, focusing on human-centered generative AI in governance and policymaking. Supported participants through multiple days of training and innovation, helping deliver inspiring solutions including AI-powered citizen engagement and transparent policy tools. Successfully demonstrated how technology can create smarter, more inclusive governance while showcasing the incredible potential of AI-driven innovation in Indonesia's public sector.",
+        "image": "/speaking/govai-hackathon-kemenkeu.png",
+        "linkedinPost": "https://www.linkedin.com/posts/nawatech_hackathon-kemenkeu-activity-7263128604518039552-d28N?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_66EkBKdPIqnapVTCAcZysD42uttkQ89k"
+      }
+    ]
+  },
   "certifications": {
     "title": "Licenses & Certifications",
     "items": [
@@ -214,7 +281,7 @@
         "credentialId": "915199A902E45314",
         "url": "https://learn.microsoft.com/api/credentials/share/en-us/MuhammadZulfikri-1395/915199A902E45314?sharingId=F8A46271361A7EC0",
         "color": "blue",
-        "icon": "☁️"
+        "icon": "microsoft"
       },
       {
         "id": 2,
@@ -225,7 +292,7 @@
         "credentialId": "565010",
         "url": "/certificates/webflow-101-certificate.pdf",
         "color": "purple",
-        "icon": "🎨"
+        "icon": "webflow"
       },
       {
         "id": 3,
@@ -236,7 +303,7 @@
         "credentialId": "392817",
         "url": "/certificates/webflow-layout-level-1-certificate.pdf",
         "color": "purple",
-        "icon": "📐"
+        "icon": "webflow"
       },
       {
         "id": 4,
@@ -247,7 +314,7 @@
         "credentialId": "415849",
         "url": "/certificates/webflow-layout-level-2-certificate.pdf",
         "color": "purple",
-        "icon": "🏗️"
+        "icon": "webflow"
       },
       {
         "id": 5,
@@ -258,7 +325,7 @@
         "credentialId": "414918",
         "url": "/certificates/webflow-cms-level-1-certificate.pdf",
         "color": "purple",
-        "icon": "📊"
+        "icon": "webflow"
       }
     ]
   },

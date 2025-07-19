@@ -71,6 +71,25 @@ export interface Experience {
   items: ExperienceItem[];
 }
 
+export interface SpeakingItem {
+  id: number;
+  title: string;
+  role: string;
+  organization: string;
+  date: string;
+  type: string;
+  description: string;
+  image: string;
+  linkedinPost: string;
+  color: string;
+  icon: string;
+}
+
+export interface Speaking {
+  title: string;
+  items: SpeakingItem[];
+}
+
 export interface CertificationItem {
   id: number;
   title: string;
@@ -116,6 +135,7 @@ export interface PortfolioData {
   skills: Skills;
   projects: Projects;
   experience: Experience;
+  speaking: Speaking;
   certifications: Certifications;
   contact: Contact;
   footer: Footer;
